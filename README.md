@@ -1,0 +1,9 @@
+
+**Variable Storage Binding Table**
+
+| Binding Type          | Description                                                             | Languages/Applications                               | Advantages                                                     | Disadvantages                                                                                                           |
+|--------------|--------------|--------------|---------------|-----------------|
+| Static Binding        | Variables bound to memory locations before execution and remain bound.  | C, C++ (static variables in functions)               | Efficient direct memory addressing<br> - No runtime overhead   | \- Reduced flexibility<br> - Can't support recursive subprograms<br> - Inability to share memory among static variables |
+| Stack-Dynamic Storage | Variable storage is allocated and deallocated when a method is called.  | Local variables in C subprograms and Java methods    | Supports recursion<br> - Conserves storage                     | Allocation/deallocation overhead<br> - Time-consuming processes<br> - Slower access due to indirect addressing          |
+| Explicit Heap-Dynamic | Programmer-managed memory allocation and deallocation during execution. | C++ (`new`/`delete`), Java (object references)       | \- Enables dynamic data structures like linked lists and trees | \- Complexity and error-proneness in managing pointers/references<br> - Overhead in reference handling                  |
+| Implicit Heap-Dynamic | Automatic allocation and deallocation with assignment statements.       | APL; strings and arrays in Perl, JavaScript, and PHP | \- Flexibility for writing generic code                        | \- Inefficiency due to dynamic binding of attributes<br> - Complicated error detection during compilation               |
